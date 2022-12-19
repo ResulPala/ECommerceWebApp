@@ -13,7 +13,7 @@ public class Program
     private static void CategoryTest()
     {
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
-        foreach (var item in categoryManager.GetAll())
+        foreach (var item in categoryManager.GetAll().Data)
         {
             Console.WriteLine(item.CategoryName);
         }  
