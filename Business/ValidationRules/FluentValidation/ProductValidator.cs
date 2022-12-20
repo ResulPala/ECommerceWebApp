@@ -22,7 +22,7 @@ namespace Business.ValidationRules.FluentValidation
 
         private bool StartWithA(string arg)
         {
-            return arg.StartsWith("a");
+            return arg.StartsWith("A");
         }
     }
 }
